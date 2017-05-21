@@ -24,6 +24,12 @@ public class BasicTricks {
 
         System.out.println("88 "+Integer.toBinaryString(88) +
                 " isolate rightmost 1-bit version2: "+ Integer.toBinaryString(basicTricks.isolateRightMost1Bit2(88)));
+
+        System.out.println("89 "+Integer.toBinaryString(89) +
+                " isolate rightmost 0-bit: "+ Integer.toBinaryString(basicTricks.isolateRightMost0Bit(89)));
+
+        System.out.println("89 "+Integer.toBinaryString(89) +
+                " isolate rightmost 0-bit: "+ Integer.toBinaryString(basicTricks.swapBits(89)));
     }
 
     boolean testNthBitSet(final int i, final int n) {
@@ -51,4 +57,13 @@ public class BasicTricks {
         return i & -i;
     }
 
+    int swapBits(final int i) {
+        int j = ~i & i;
+        return j;
+    }
+
+    int isolateRightMost0Bit(final int i) {
+        return ~i & (i+1);
+    }
 }
+
