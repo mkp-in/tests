@@ -1,6 +1,10 @@
 package in.mkp.sandbox.bitoperators;
 
 /**
+ *
+ * REF: http://www.catonmat.net/blog/low-level-bit-hacks-you-absolutely-must-know/
+ *      http://graphics.stanford.edu/~seander/bithacks.html
+ *
  * Created by mkumar on 4/10/17.
  */
 public class BasicTricks {
