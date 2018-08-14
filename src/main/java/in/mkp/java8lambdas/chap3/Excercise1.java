@@ -9,6 +9,8 @@ import in.mkp.java8lambdas.chap1.Album;
 import in.mkp.java8lambdas.chap1.Artist;
 import in.mkp.java8lambdas.chap1.SampleData;
 
+import static java.util.stream.Collectors.toList;
+
 /**
  * Created by mkumar on 5/2/17.
  */
@@ -28,7 +30,7 @@ public class Excercise1 {
     }*/
 
     public static List<Album> getAlbumsWithAtMostThreeTracks(List<Album> input) {
-        return input.stream().filter(a -> a.getTrackList().size() <=3 ).collect(Collectors.toList());
+        return input.stream().filter(a -> a.getTrackList().size() <=3 ).collect(toList());
     }
 
     public static void main(String[] args) {
